@@ -2,6 +2,101 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <ObjectHeader 
+                id="title" 
+                title="Campeonato Brasileiro FioriNET"
+                number="22ª"
+                numberUnit="rodada">
+            </ObjectHeader>
+
+            <IconTabBar id="Icon_Bar">
+                <items>
+                    <IconTabFilter 
+                        id="IconTab" 
+                        text="Classificação"
+                        icon="sap-icon://competitor" >
+                        <Table id="tb_Classificacao">
+                            <columns>
+                                <Column id="cl_00">
+                                    <Text id="cl_text00" text="Posição"></Text>
+                                </Column>
+                                <Column id="cl_01">
+                                    <Text id="cl_text01" text="Escudo"></Text>
+                                </Column>
+                                <Column id="cl_02">
+                                    <Text id="cl_text02" text="Time"></Text>
+                                </Column>
+                                <Column id="cl_03">
+                                    <Text id="cl_text03" text="Pontos"></Text>
+                                </Column>
+                                <Column id="cl_04">
+                                    <Text id="cl_text04" text="Jogos"></Text>
+                                </Column>
+                                <Column id="cl_05">
+                                    <Text id="cl_text05" text="Vitórias"></Text>
+                                </Column>
+                                <Column id="cl_06">
+                                    <Text id="cl_text06" text="Empates"></Text>
+                                </Column>
+                                <Column id="cl_07">
+                                    <Text id="cl_text07" text="Derrotas"></Text>
+                                </Column>
+                                <Column id="cl_08">
+                                    <Text id="cl_text08" text="GM"></Text>
+                                </Column>
+                                <Column id="cl_09">
+                                    <Text id="cl_text09" text="GC"></Text>
+                                </Column>
+                                <Column id="cl_10">
+                                    <Text id="cl_text10" text="SG"></Text>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="cl_item">
+                                    <cells>
+                                        <Text text="1"></Text>
+                                        <Image width="50%" src="https://logodownload.org/wp-content/uploads/2020/01/red-bull-bragantino-logo-0-1536x1536.png"></Image>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                                <ColumnListItem id="cl_item_01">
+                                    <cells>
+                                        <Text text="2"></Text>
+                                        <Image width="50%" src="https://logodownload.org/wp-content/uploads/2020/01/red-bull-bragantino-logo-0-1536x1536.png"></Image>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                        <Text text="1"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </IconTabFilter>
+
+                    <IconTabFilter 
+                        id="IconTab_1" 
+                        text="Partidas"
+                        icon="sap-icon://soccer" >
+
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+
+        </content>
     </Page>
 </mvc:View>
